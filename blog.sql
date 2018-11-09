@@ -1,0 +1,16 @@
+DROP DATABASE IF EXISTS blog;
+CREATE DATABASE IF NOT EXISTS blog;
+
+USE blog;
+
+CREATE TABLE users(
+    id INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    lastname VARCHAR(100) NOT NULL,
+    username VARCHAR(100) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    pass VARCHAR(255) NOT NULL,
+    role ENUM('Admin', 'Usuario') DEFAULT 'Usuario',
+    created_at TIMESTAMP,
+    updated_at TIMESTAMP 
+);

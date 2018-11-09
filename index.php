@@ -1,9 +1,9 @@
 <?php
 require_once('./config/core.php');
 require_once('./core/Autoload.php');
-use core\Autoload;
+// require_once('./core/Controller.php');
+// require_once('./core/Views.php');
 
-$autoload = new Autoload();
 
 if ($_GET && isset($_GET['controller'])) {
     $controller = strtolower(ucwords($_GET['controller']));

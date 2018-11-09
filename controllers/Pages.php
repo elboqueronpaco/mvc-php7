@@ -1,7 +1,7 @@
 <?php
-require_once('./core/Controller.php');
-use core\Controller;
 
+use core\Controller;
+use core\Views;
 class Pages extends Controller
 {
     public function __construct()
@@ -10,7 +10,8 @@ class Pages extends Controller
     }
 
     public function index(){
-        echo "Bienvenido al método index";
+        
+        $Viewindex = new Views("Pages/index.php");
     }
 
 }

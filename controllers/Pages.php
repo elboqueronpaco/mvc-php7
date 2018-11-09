@@ -1,7 +1,7 @@
 <?php
 
 use core\Controller;
-use core\Views;
+use core\Layout;
 class Pages extends Controller
 {
     public function __construct()
@@ -11,7 +11,7 @@ class Pages extends Controller
 
     public function index(){
         
-        $Viewindex = new Views("Pages/index.php");
+        $Viewindex = new Layout("Pages/index.php");
     }
 
 }
